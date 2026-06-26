@@ -1,0 +1,17 @@
+### LOGIN WITH USER THAT DOESN'T EXIST
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "email": "zheng@gmail.com",
+  "password": "zheng"
+}
+
+### LOGIN WITH CORRECT EMAIL & PASSWORD
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "email": "fang@gmail.com",
+  "password": "fang"
+}

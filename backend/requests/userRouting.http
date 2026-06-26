@@ -1,0 +1,29 @@
+### CREATE A NEW USER
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "email": "bai@gmail.com",
+  "name": "Bai Ning Bing",
+  "password": "bai",
+  "role": "student"
+}
+
+
+### PATCH with EMAIL & PASSWORD
+PATCH http://localhost:3001/api/users/6a3e3a876b5edf3b3fd2dbce
+Content-Type: application/json
+
+{
+  "email": "fang@gmail.com",
+  "password": "fangyuan",
+  "name": "Fang Yuan"
+}
+
+### DELETE a USER THAT DOESNT EXIST
+DELETE http://localhost:3001/api/users/6a3e3a876a5edf3b3fd2dbca
+
+### DELETE a USER THAT DOES EXSIT
+DELETE http://localhost:3001/api/users/6a3e423ba546c29593fa87a8
+
+
